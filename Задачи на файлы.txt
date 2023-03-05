@@ -12,3 +12,8 @@ file = open('output.txt', 'w')
 
 file.write(str(num))
 file.close()
+# 5
+d = {12345: ("name",12), 23456: ("name1",15), 34567: ('name2',17), 45678: ('name4',19), 56789: ('name5', 21)}
+with open('test.json','w') as file:
+    file.write(str(d))
+#6
