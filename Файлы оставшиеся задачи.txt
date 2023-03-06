@@ -1,0 +1,33 @@
+№4
+counter = 0
+with open('12.txt', 'r') as file:
+    # quations = file.read()
+    with open('asks.txt','r') as file1:
+        # asks = file1.read()
+        for line in file:
+            print(line,'Ваш ответ:')
+            player = input()
+            for line1 in file1:
+                print(line1)
+                if player in line1:
+                    counter +=1
+                    # print(counter)
+                    break
+                else:
+                    print('NO')
+                    break
+print(counter)
+№5
+import json
+d = {
+    'name': 'John',
+    'lastname': 'Watson',
+    'age': 24
+}
+with open("test2_json.json",'w') as file:
+    json.dump(d,file, indent='person')
+№6
+with open("test2_json.json",'r') as file1:
+    scv_file = file1.read()
+with open("test.csv", 'w') as file_2:
+    file_2.write(','.join(scv_file))
