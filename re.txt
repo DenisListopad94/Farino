@@ -1,0 +1,38 @@
+№1
+import re
+some_str = 'cat cathome hellcat Sasha Vova Vlad'
+pattern = re.findall('\w*cat\w*',some_str)
+print(pattern)
+№2
+import re
+some_str = 'fstzgtdz zfsrdtvdz zzzzzzz Sasha zjz Vlad'
+pattern = re.findall('\w*z\w{3}z\w*',some_str)
+print(pattern)
+№3
+import re
+some_str = '8957843756 9876543 6573926452 9876543210'
+pattern = re.findall('[89]\w{9}',some_str)
+print(pattern)
+№4
+import re
+some_str = ' Алина Саша Шура Константин Алексей аппарат'
+pattern = re.findall('\W[уеэоаяиюё]\w+',some_str.lower())
+print(pattern)
+№5
+import re
+some_str = '2746327472 -524542234 76473643 jbdfvbfhvbhsh -234324nfbcbxnxj'
+pattern = re.findall('-?\d+\W',some_str.lower())
+print(pattern)
+№6
+import re
+some_str = 'computerhuman human arangelhuman coputer'
+pattern = re.sub('human','computer',some_str)
+print(pattern)
+№7
+import re
+some_str = '13-03-2023'
+patern = re.sub('-','.',some_str)
+print(patern)
+pattern = re.findall('\d\d\.\d\d\.\d{4}',patern)
+print(pattern)
+№8

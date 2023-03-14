@@ -1,0 +1,37 @@
+№1
+class Suma:
+    def __init__(self,numb1,numb2):
+        self.numb1 = numb1
+        self.numb2 = numb2
+
+    def info(self):
+        print(self.numb1 + self.numb2)
+
+s = Suma(23,78)
+s.info()
+№5
+class MoneyBox:
+    money = 0
+
+    def __init__(self, vmestimost)
+        self.vmestimost = vmestimost
+
+    def can_add(self, v):
+        if MoneyBox.money + v <= self.vmestimost:
+            print("Вмещается")
+        else:
+            print("Не вмещается")
+
+    def add(self, v):
+        if MoneyBox.money + v <= self.vmestimost:
+            MoneyBox.money += v
+            print(f"Ваш баланс {MoneyBox.money}")
+        else:
+            print(f"Превышен лимит, ваш текущий баланс {MoneyBox.money} ")
+
+
+Dipozit= MoneyBox(10)
+Dipozit.can_add(10)
+Dipozit.add(5)
+Dipozit.add(5)
+Dipozit.add(5)
